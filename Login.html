@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport"  content="width=device-width, intial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"  />
+    <link rel="stylesheet" 
+    rel="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d601M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="Login_styles.css">
+    <title>Login</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+<script src="loginintershala.js"></script>
+</head>
+<body>
+
+
+  <div class="home">
+    <div class="home_background" style="background-image:url(images/tomb.jpeg)"></div>
+    <div class="home_content">
+      <div class="home_content_inner">
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+    <form action="phpregister.php" method="POST">
+      <h1>Create Account</h1>
+      <input type="text" name="fName"id="fName" placeholder="Name" required=""><br><br>
+      <input type="email" name="fEmail" id="fEmail" placeholder="example.@mail.com"required=""><br><br>
+      <input type="text" name="fmobile" id="fmobile" placeholder="89895895425"required=""><br><br>
+      <input type="text" name="fpassword" id="fpassword" placeholder="Password" required=""><br><br>
+      <button type="submit" name="signup">Sign Up</button>
+    </form>
+  </div>
+  
+  
+  
+  <div class="form-container sign-in-container">
+    <form action="phplogin.php" method="post" >
+      <a href="index.html"> Sign in </a>
+      <input  type="text" name="mEmail"placeholder="example.@mail.com" id="mEmail"required=""><br><br>
+      <input type="text" name="mpassword" placeholder="Password" id="mpassword"required=""><br><br>
+      <input class="btn"  type="submit" name="signin" value="Sign in" >
+      </form>
+  </div>
+  
+  
+  
+  
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Welcome </h1>
+        <p>To keep connected with us please login with your personal info</p>
+        <button class="ghost" id="signIn">Sign In</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Welcome To Elderly</h1>
+        <p>Enter your personal details and start journey with us</p>
+        <button class="ghost" id="signUp">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/Login.js"></script>
+<script type="text/javascript">
+     function validation()
+     {
+      var memail =document.getElementById('memail').value;
+      var mpassword=document.getElementById('mpassword').value;
+
+
+
+      if(memail=="")
+      {
+       alert('Enter Username');
+        return false;
+      }
+
+
+      if(mpassword=="")
+      {
+       alert('Enter Password');
+        return false;
+      }
+
+
+
+
+      else
+      {
+       return true;
+      }
+     }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+  
+  
+      
+        
+      
+      
+      
+  
+      
+    
+      
+
